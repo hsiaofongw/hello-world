@@ -34,7 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - run: echo "hello" >> a.txt
+      - run: mkdir lib
+      - run: cp -r /usr/lib/* lib/
       - name: Add & Commit
         uses: EndBug/add-and-commit@v7.0.0
         with:
